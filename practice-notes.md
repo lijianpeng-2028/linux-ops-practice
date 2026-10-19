@@ -1,7 +1,7 @@
 # 李建鹏的运维实战笔记 (Linux & K8s)
 
 ## 👋 关于我
-- 3年+ Linux 系统运维经验，专注云原生与 AIOps 方向。
+- 4年+ Linux 系统运维经验，专注云原生与 AIOps 方向。
 - 熟悉 Kubernetes、ArgoCD、Prometheus、Docker。
 
 ## 🛠 技术栈
