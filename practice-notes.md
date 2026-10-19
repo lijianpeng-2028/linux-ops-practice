@@ -17,4 +17,5 @@
 - [ ] **etcd-backup**：etcd 备份与灾备恢复标准 SOP
 💡 实战踩坑记录：
 宿主机无 etcdctl 怎么备份？ 因为是 kubeadm 最小化安装的 K8s，宿主机并没有 etcdctl 环境。我采用了 kubectl exec 直接进入 etcd 容器执行 snapshot save。
+
 容器无 tar 命令怎么拷贝？ 官方 etcd 镜像极其精简，没有 tar 命令，导致 kubectl cp 失败。我巧妙地利用了 K8s 默认挂载的 /var/lib/etcd 目录，让容器直接把快照生成到这个映射目录里，宿主机就能直接拿到了。
